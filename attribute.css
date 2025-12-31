@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.subject { color: rgb(255, 224, 88); }
+.topic { color: blue; }
+.grade { color: pink; }
