@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+
+    <style>
+        /* ---------- Global Reset ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #222;
+        }
+
+        /* ---------- Navigation ---------- */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #555;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000;
+            border-color: #000;
+        }
+
+        nav a.active {
+            color: #000;
+            font-weight: 600;
+            border-color: #000;
+        }
+
+        /* ---------- Main Content ---------- */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        article, aside {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+
+        article h2 {
+            margin-bottom: 1rem;
+        }
+
+        aside {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ---------- Figure ---------- */
+        figure {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        figcaption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 768px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Navigational Links</h1>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <article>
+            <h2>Facts About Dogs</h2>
+            <p>
+                Dogs have a sense of time but don’t understand the ‘concept’ of time.
+                Unlike humans, dogs don’t have the ability to create actual measures
+                of time, like the second, hour, and minute, and they don’t know how
+                to read clocks.
+            </p>
+        </article>
+
+        <aside>
+            <p>
+                The dog is a domesticated descendant of the wolf. Dogs were the first
+                species to be domesticated by hunter-gatherers over 15,000 years ago.
+            </p>
+        </aside>
+    </section>
+
+    <figure>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." alt="A cute dog">
+        <figcaption>A cute dog.</figcaption>
+    </figure>
+</main>
+
+<footer>
+    <p>Contact me at +91 6361 158952</p>
+</footer>
+
+</body>
+</html>
